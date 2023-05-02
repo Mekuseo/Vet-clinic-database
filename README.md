@@ -85,6 +85,10 @@ After you're finished please remove all the comments and instructions!
 
 ![Screenshot](./1.jpg)
 ![Screenshot](./2.jpg)
+![Screenshot](./3.jpg)
+![Screenshot](./4.jpg)
+![Screenshot](./5.jpg)
+![Screenshot](./6.jpg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
