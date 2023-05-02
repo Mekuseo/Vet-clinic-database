@@ -115,7 +115,7 @@ Example commands:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@mekuseo](https://github.com/mekuseo)
 
