@@ -90,6 +90,7 @@ After you're finished please remove all the comments and instructions!
 ![Screenshot](./6.jpg)
 ![Screenshot](./7.jpg)
 ![Screenshot](./8.jpg)
+![Screenshot](./query multiple tables.jpg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
