@@ -82,15 +82,17 @@ After you're finished please remove all the comments and instructions!
 
 > screenshots of the project
 
-![Screenshot](./1.jpg)
-![Screenshot](./2.jpg)
-![Screenshot](./3.jpg)
-![Screenshot](./4.jpg)
-![Screenshot](./5.jpg)
-![Screenshot](./6.jpg)
-![Screenshot](./7.jpg)
-![Screenshot](./8.jpg)
-![Screenshot](./query multiple tables.jpg)
+![Screenshot](./assets/1.jpg)
+![Screenshot](./assets/2.jpg)
+![Screenshot](./assets/3.jpg)
+![Screenshot](./assets/4.jpg)
+![Screenshot](./assets/5.jpg)
+![Screenshot](./assets/6.jpg)
+![Screenshot](./assets/7.jpg)
+![Screenshot](./assets/8.jpg)
+![Screenshot](./assets/10.jpg)
+![Screenshot](./assets/11.jpg)
+![Screenshot](./assets/query multiple tables.jpg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,6 +128,11 @@ Example commands:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features
+- [ ] **Adding more tables**
+- [ ] **creating another database**
+- [ ] **linking different databases**
 
 <!-- CONTRIBUTING -->
 

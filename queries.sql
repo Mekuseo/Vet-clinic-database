@@ -90,3 +90,68 @@ INNER JOIN owners ON animals.owner_id = owners.id
 GROUP BY owners.full_name 
 ORDER BY count DESC 
 LIMIT 1;
+
+SELECT animals.name
+FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'William Tatcher'
+ORDER BY visits.visit_date DESC
+LIMIT 1;
+
+SELECT COUNT(DISTINCT visits.animal_id)
+FROM visits
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'Stephanie Mendez';
+
+SELECT vets.name, specializations.species_id
+FROM vets
+LEFT JOIN specializations ON vets.id = specializations.vet_id
+LEFT JOIN species ON specializations.species_id = specializations.id;
+
+SELECT animals.name
+FROM animals
+JOIN visits ON animals.id = visits.animal_id
+JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'Stephanie Mendez'
+AND visits.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
+
+SELECT animals.name, COUNT(*) AS num_visits
+FROM animals
+JOIN visits ON animals.id = visits.animal_id
+GROUP BY animals.name
+ORDER BY num_visits DESC
+LIMIT 1;
+
+SELECT vets.name
+FROM vets
+JOIN visits ON vets.id = visits.vet_id
+JOIN animals ON visits.animal_id = animals.id
+JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Maisy Smith'
+ORDER BY visits.visit_date ASC
+LIMIT 1;
+
+SELECT animals.name AS animal_name, vets.name AS vet_name, visits.visit_date
+FROM visits
+JOIN animals ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+ORDER BY visits.visit_date DESC
+LIMIT 1;
+
+SELECT COUNT(*)
+FROM visits
+JOIN animals ON visits.animal_id = animals.id
+JOIN vets ON visits.vet_id = vets.id
+LEFT JOIN specializations ON (vets.id = specializations.vet_id AND animals.species_id = specializations.species_id)
+WHERE specializations.id IS NULL;
+
+SELECT specializations.species_id
+FROM specializations
+JOIN (SELECT animals.species_id, COUNT(*) AS num_visits
+      FROM animals
+      JOIN visits ON animals.id = visits.animal_id
+      WHERE animals.owner_id = (SELECT id FROM owners WHERE name = 'Maisy Smith')
+      GROUP BY animals.species_id
+      ORDER BY num_visits DESC
+      LIMIT 1) AS most_visited_species ON specializations.id = most_visited_species.species_id;
