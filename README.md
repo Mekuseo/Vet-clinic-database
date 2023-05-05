@@ -129,6 +129,11 @@ Example commands:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features
+- [ ] **Adding more tables**
+- [ ] **creating another database**
+- [ ] **linking different databases**
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
